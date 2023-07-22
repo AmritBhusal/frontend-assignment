@@ -1,0 +1,258 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  select {
+    width: 200px;
+  }
+  
+  .price-filter {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .price-filter-button {
+    height: 36px;
+    padding: 4px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .price-filter-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .price-filter-dropdown div {
+    margin-bottom: 10px;
+  }
+  
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #555;
+}
+
+.product-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.product-details h1 {
+  margin-top: 0;
+}
+
+.product-details .product-image {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.product-details .product-price {
+  margin-top: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-details .product-description {
+  margin-top: 10px;
+}
+
+.product-details .product-category {
+  margin-top: 10px;
+}
+
+.product-details .product-rating {
+  margin-top: 10px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.product-details-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-details-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-details-photo {
+  flex: 0 0 40%;
+  margin-right: 20px;
+}
+
+.product-details-photo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-details-info {
+  flex: 0 0 60%;
+}
+
+.product-details-info p {
+  margin-bottom: 10px;
+}
+
+.product-details-info .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-details-info .description {
+  color: #555;
+}
+
+.product-details-info .category {
+  font-weight: bold;
+  color: #555;
+}
+
+.product-details-info .rating {
+  font-weight: bold;
+  color: #555;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #2c5fec;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #61ef4f;
+}
